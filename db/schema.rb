@@ -11,9 +11,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160322074124) do
+ActiveRecord::Schema.define(version: 20160331201708) do
 
   create_table "products", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=latin1" do |t|
+    t.string   "product_name"
     t.string   "url_image"
     t.float    "catalog_price", limit: 24
     t.float    "points",        limit: 24
